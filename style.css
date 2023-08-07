@@ -14,10 +14,14 @@ p{
     margin: 0 !important;
 }
 
-.img-fluid{
+h3{
+    text-decoration: none !important;
+}
+
+/* .img-fluid{
     width: 150px;
     height: auto;
-}
+} */
 
 .nav-items:hover{
     color: rgb(25 135 84) !important;
@@ -57,4 +61,33 @@ p{
 .shop-btn:hover{
     background-color: transparent !important;
     color: rgb(4 116 52) !important;
+}
+
+.swiper{
+    overflow: initial;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    content: "";
+}
+
+.swiper-button-prev, .swiper-button-next{
+    top: -1.875rem;
+    background-color: rgba(25, 135, 84, 0.192) !important;
+    border: 1px solid rgba(25, 135, 84, 0.192) !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color:  rgba(0, 0, 0, 0.288);
+    font-size: 10px;
+}
+
+.swiper-button-prev{
+    left: initial;
+    right: 2.5rem;
+}
+
+.swiper-button-next{
+    right: 0;
 }
