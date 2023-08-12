@@ -92,6 +92,11 @@ h3{
     right: 0;
 }
 
+.tab_btn.active-tab{
+    color: rgb(5, 105, 27);
+    background-color: rgb(218, 203, 5);
+}
+
 .tab-items{
     display: grid;
 }
