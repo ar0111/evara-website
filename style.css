@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 body{
@@ -244,4 +244,71 @@ h3{
 }
 .old_price{
     font-size: 12px;
+}
+
+
+/* Deals Section */
+
+/* .grid-1{
+    display: grid;
+    grid-gap: 20px;
+}
+
+.deals_container{
+    grid-template-columns: repeat(2, 2fr);
+} */
+
+
+.deals_item:nth-child(1){
+    background-image: url(img/deals-1.jpg);
+}
+
+.deals_item:nth-child(2){
+    background-image: url(img/deals-2.png);
+}
+
+.deals_item{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    row-gap: 1.25rem;
+    width: 650px !important;
+}
+
+.deals_title{
+    max-width: 240px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.deals_price .new_price,
+.deals_price .old_price{
+    font-size: 15px !important;
+}
+
+.deals_price .new_price{
+    color: hsl(352, 100%, 60%);
+}
+
+.countdown_amount::after{
+    content: ':';
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    right: -25%;
+    top: 20%;
+}
+
+.countdown_period{
+    background-color: green;
+    color: white;
+    width: 60px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 0.25rem;
+    font-size: 20px;
+    font-weight: 600;
 }
