@@ -1,5 +1,5 @@
 
-var swipercategories = new Swiper(".mySwiper", {
+var swiperCategories = new Swiper(".mySwiper", {
     spaceBetween: 10,
     loop: true,
     navigation: {
@@ -22,6 +22,33 @@ var swipercategories = new Swiper(".mySwiper", {
         },
     },
 });
+
+// Swiper Section
+
+var swiperProducts = new Swiper(".new_container", {
+  spaceBetween: 10,
+  loop: true,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1400: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+      },
+  },
+});
+
 
 // Product Tabs
 

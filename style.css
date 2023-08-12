@@ -312,3 +312,42 @@ h3{
     font-size: 20px;
     font-weight: 600;
 }
+
+/* Showcase Section */
+
+.showcase_wrapper{
+    width: 310px !important;
+}
+
+.showcase_wrapper .section_title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1.3px;
+    width: 50px;
+    height: 2px;
+    background-color: green;
+}
+
+.showcase_item{
+    column-gap: 1.5rem;
+}
+
+.showcase_img_box .showcase_img .img_fluid{
+    width: 86px !important;
+    height: 86px !important;
+}
+
+.showcase_item:not(:last-child){
+    margin-bottom: 1.5rem;
+}
+
+.showcase_content{
+    width: calc(100% - 110px);
+}
+
+.showcase_title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
