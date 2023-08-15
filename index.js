@@ -71,3 +71,18 @@ tabs.forEach((tab)=>{
     tab.classList.add('active-tab');
   });
 });
+
+// IMAGE GALLERY
+
+function imgGallery(){
+  const mainImg = document.querySelector('.details_img'),
+  smallImg = document.querySelectorAll('.details_small_img');
+
+  smallImg.forEach((img) =>{
+    img.addEventListener('click', function(){
+      mainImg.src = this.src;
+    });
+  });
+}
+
+imgGallery();
