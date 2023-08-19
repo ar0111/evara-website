@@ -705,10 +705,19 @@ h3{
     color: gray;
 }
 
+.btn_sm:hover,
 .btn_md:hover{
     border: 2px solid rgb(0,139,139) !important;
     background-color: transparent !important;
     color: rgb(0,139,139) !important;
+}
+
+/* #cart_group-01{
+    width: 800px !important;
+} */
+
+.w-form{
+    width: 310px !important;
 }
 
 .cart_actions{
@@ -736,3 +745,40 @@ h3{
     position: relative;
     z-index: 10;
 }
+
+.cart_shipping .section_title,
+.cart_coupon .section_title,
+.cart_total .section_title{
+    font-size: 18px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.login{
+    height: 80%;
+}
+
+.login,
+.register{
+    width: 650px !important;
+}
+
+/* Checkout Section */
+.checkout_group{
+    width: 660px !important;
+}
+
+.total_section{
+    width: 40px !important;
+}
+
+.img_section{
+    /* display: inline-block; */
+    width: 80px !important;
+    height: 80px !important;
+}
+
+
+/* .img_section img{
+    width: 80px !important;
+} */
