@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="bg-success-subtle border-bottom border-success border-2 py-2">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="me-3">+880171-0262535</span>
+                        <span>Our Location</span>
+                    </div>
+                    <div>
+                        <p>Super Value Deals - Save more with coupons</p>
+                    </div>
+                    <div>
+                        <a class="text-decoration-none text-dark" href="login-register.html">Log In / Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg my-3">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img class="img-fluid w-50" src="img/logo.svg" alt=""></a>
+              
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold text-success" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold nav-items" href="shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold nav-items active" href="accounts.html" aria-disabled="true">My Account</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold nav-items" href="compare.html" aria-disabled="true">Compare</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold nav-items" href="login-register.html" aria-disabled="true">Login</a>
+                  </li>
+                </ul>
+                <form class="d-flex position-relative header__search" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search for items..." aria-label="Search">
+                  <button class="btn position-absolute bottom-0 end-0" type="submit"><img src="img/search.png" alt=""></button>
+                </form>
+
+                <div>
+                  <a class="position-relative" href="wishlist.html">
+                    <img class="img-fluid icon" src="img/icon-heart.svg" alt="">
+                    <span class="position-absolute text-decoration-none bg-success text-white icon-text">3</span>
+                  </a>
+                  
+                  <a class="position-relative" href="cart.html">
+                    <img class="img-fluid icon" src="img/icon-cart.svg" alt="">
+                    <span class="position-absolute text-decoration-none bg-success text-white icon-text">3</span>
+                  </a>
+                  
+                </div>
+
+              </div>
+            </div>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section class="breadcrumb bg-secondary-subtle">
+            <ul class="breadcrumb_list container d-flex my-3">
+                <li><a href="index.html" class="breadcrumb_link text-decoration-none text-dark text-secondary">Home</a></li>
+                <li><span class="breadcrumb_link text-secondary">></span></li>
+                <li><span class="breadcrumb_link text-secondary">Account</span></li>
+            </ul>
+        </section>
+
+        <section class="accounts my-5">
+          <div class="accounts_container container grid">
+            <div class="row justify-content-between">
+              <div class="account_tabs col-md-5 border border-secondary-subtle rounded-1 p-0" style="width: 375px;">
+                <p class="account_tab active-tab" data-target="#dashboard">
+                    <i class="fa-solid fa-sliders"></i> Dashboard
+                </p>
+
+                <p class="account_tab" data-target="#orders">
+                    <i class="fa-solid fa-bag-shopping"></i> Orders
+                </p>
+
+                <p class="account_tab" data-target="#update_profile">
+                    <i class="fa-solid fa-user"></i> Update Profile
+                </p>
+
+                <p class="account_tab" data-target="#address">
+                    <i class="fa-solid fa-marker"></i> My Address
+                </p>
+
+                <p class="account_tab" data-target="#change_password">
+                    <i class="fa-solid fa-user"></i> Change Password
+                </p>
+
+                <p class="account_tab">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+                </p>
+            </div>
+
+              <div class="tabs_content col-md-5" style="width: 900px;">
+                <div class="tab_content border border-secondary-subtle active-tab" content id="dashboard">
+                    <h3 class="tab_header">Hello Rosie!</h3>
+
+                    <div class="tab_body">
+                        <p class="tab_description">From your account dashboard, you can easily check & view your recent orders, manage your shipping and billing addresses and edit your password and account details.</p>
+                    </div>
+                </div>
+
+                <div class="tab_content border border-secondary-subtle" content id="orders">
+                    <h3 class="tab_header">Your Orders</h3>
+
+                    <div class="tab_body">
+                        <table class="placed_order_table table table-bordered">
+                            <colgroup>
+                                <col span="1" style="width: 20%;">
+                                <col span="1" style="width: 20%;">
+                                <col span="1" style="width: 20%;">
+                                <col span="1" style="width: 20%;">
+                                <col span="1" style="width: 20%;">
+                            </colgroup>
+                            <tr>
+                                <th>Orders</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Total</th>
+                                <th>Actions</th>
+                            </tr>
+
+                            <tr>
+                                <td>#1357</td>
+                                <td>March 25, 2023</td>
+                                <td>Processing</td>
+                                <td>$125.00</td>
+                                <td><a class="text-decoration-none text-success" href="#" class="view_order">View</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>#2468</td>
+                                <td>June 29, 2023</td>
+                                <td>Completed</td>
+                                <td>$364.00</td>
+                                <td><a class="text-decoration-none text-success" href="#" class="view_order">View</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>#2366</td>
+                                <td>August 02, 2023</td>
+                                <td>Completed</td>
+                                <td>$280.00</td>
+                                <td><a class="text-decoration-none text-success" href="#" class="view_order">View</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tab_content border border-secondary-subtle" content id="update_profile">
+                    <h3 class="tab_header">Update Profile</h3>
+
+                    <div class="tab_body">
+                        <form action="" class="form grid">
+                          <input type="text" placeholder="Username" class="form_input w-100 mb-3 p-2">
+
+                          <div class="form_btn">
+                            <button class="btn btn_md text-white">Save</button>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="tab_content border border-secondary-subtle" content id="address">
+                  <h3 class="tab_header">Shipping Address</h3>
+
+                  <div class="tab_body">
+                    <address class="address m-0">
+                      3522 Interstate <br> 75 Business Spur, <br> Sault Ste. <br> Marie, MI 49783 
+                    </address>
+
+                    <p class="city">New York</p>
+                    <a class="text-decoration-none text-success" href="" class="edit">Edit</a>
+                  </div>
+                </div>
+
+                <div class="tab_content border border-secondary-subtle" content id="change_password">
+                  <h3 class="tab_header">Change Password</h3>
+
+                  <div class="tab_body">
+                    <form action="" class="form grid">
+                      <input type="password" placeholder="Current Password" class="form_input w-100 mb-3 p-2">
+
+                      <input type="password" placeholder="New Password" class="form_input w-100 mb-3 p-2">
+
+                      <input type="password" placeholder="Confirm Password" class="form_input w-100 mb-3 p-2">
+
+                      <div class="form_btn">
+                        <button class="btn btn_md text-white">Save</button>
+                      </div>
+                    </form>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="newsletter home_newsletter py-4 mt-4">
+          <div class="newsletter_container container grid">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="newsletter_title d-flex fs-5">
+                <img src="img/icon-email.svg" alt="" class="newsletter_icon">
+                Sign up to Newsletter
+              </h3>
+  
+              <p class="newsletter_description fw-semibold">...and receive $25 coupon for first shopping.</p>
+  
+              <form action="" class="newsletter_form d-flex">
+                <input type="text" placeholder="Enter your email" class="newsletter_input">
+  
+                <button type="submit" class="newsletter_btn btn btn-dark">Subscribe</button>
+              </form>
+            </div>
+            
+          </div>
+        </section>
+
+    </main>
+
+    <footer class="footer container my-4">
+      <div class="footer_container grid row justify-content-between">
+        <div class="footer_content col-lg-2" id="footer_content01">
+          <a href="index.html" class="footer_logo">
+            <img src="img/logo.svg" alt="" class="footer_logo_img w-25">
+          </a>
+
+          <h4 class="footer_subtitle fs-6 mt-2 text-secondary">Contact</h4>
+          <p class="footer_description text-secondary">
+            <span class="fw-bold">Address:</span> 562 Wellington Road, Street 32, San Francisco
+          </p>
+          <p class="footer_description text-secondary">
+            <span class="fw-bold">Phone:</span> +-1 2222 365 /(+91) 01 2345 6789
+          </p>
+          <p class="footer_description text-secondary">
+            <span class="fw-bold">Hours:</span> 10:00 - 18:00, Mon - Sat
+          </p>
+
+          <div class="footer_social">
+            <h4 class="footer_subtitle mt-4 fs-6 text-secondary">Follow Me</h4>
+
+            <div class="footer_social_links d-flex">
+              <a href="">
+                <img src="img/icon-facebook.svg" alt="" class="footer_social_icon">
+              </a>
+              <a href="">
+                <img src="img/icon-twitter.svg" alt="" class="footer_social_icon">
+              </a>
+              <a href="">
+                <img src="img/icon-instagram.svg" alt="" class="footer_social_icon">
+              </a>
+              <a href="">
+                <img src="img/icon-pinterest.svg" alt="" class="footer_social_icon">
+              </a>
+              <a href="">
+                <img src="img/icon-youtube.svg" alt="" class="footer_social_icon">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_content col-lg-2">
+          <h3 class="footer_title fs-6 fw-bold mb-3">Address</h3>
+
+          <ul class="footer_links">
+            <li><a href="" class="footer_link">About Us</a></li>
+            <li><a href="" class="footer_link">Delivery Information</a></li>
+            <li><a href="" class="footer_link">Privac Policy</a></li>
+            <li><a href="" class="footer_link">Terms & Condition</a></li>
+            <li><a href="" class="footer_link">Contact Us</a></li>
+            <li><a href="" class="footer_link">Support Center</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_content col-lg-2">
+          <h3 class="footer_title fs-6 fw-bold mb-3">My Account</h3>
+
+          <ul class="footer_links">
+            <li><a href="" class="footer_link">Sign In</a></li>
+            <li><a href="" class="footer_link">View Cart</a></li>
+            <li><a href="" class="footer_link">My Wishlist</a></li>
+            <li><a href="" class="footer_link">Track My Order</a></li>
+            <li><a href="" class="footer_link">Help </a></li>
+            <li><a href="" class="footer_link">Order</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_content col-lg-2" id="footer_content02">
+          <h3 class="footer_title fs-6 fw-bold mb-3">Secured Payment Gateways</h3>
+
+          <img src="img/payment-method.png" alt="" class="payment_img">
+        </div>
+      </div>
+
+      <div class="footer_bottom d-flex justify-content-between border-top my-3">
+        <p class="copyright mt-3 text-secondary">&copy; 2023 Evara. All right reserved</p>
+        <span class="designer mt-3 text-secondary">Designed by Arafat Rahman</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>

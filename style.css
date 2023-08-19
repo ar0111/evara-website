@@ -792,3 +792,47 @@ h3{
 .compare_left{
     width: 90px !important;
 }
+
+/* Accounts Section */
+
+.tab_content:not(.active-tab){
+    display: none;
+}
+
+.account_tab{
+    padding: 1rem 2rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    column-gap: 0.625rem;
+    cursor: pointer;
+}
+
+.account_tab.active-tab{
+    background-color: rgb(0,139,139);
+    color: white;
+}
+
+.account_tab:not(:last-child){
+    border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+}
+
+.tab_header{
+    background-color: rgba(128, 128, 128, 0.459);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+    padding: 1rem;
+    font-size: 18px;
+}
+
+.tab_body{
+    padding: 1rem;
+}
+
+.address{
+    font-style: normal;
+    line-height: 1.5rem;
+}
+
+.city{
+    margin-bottom: 0.25rem;
+}
