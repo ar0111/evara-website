@@ -782,3 +782,13 @@ h3{
 /* .img_section img{
     width: 80px !important;
 } */
+
+/* Compare Images */
+.compare_img{
+    width: 350px;
+    height: 350px;
+}
+
+.compare_left{
+    width: 90px !important;
+}
